@@ -93,5 +93,7 @@ public class PostOperation {
 		.contentType(ContentType.JSON)
 		.statusCode(204);
 		
+		System.out.println("commit 1");
+		
 	}
 }
