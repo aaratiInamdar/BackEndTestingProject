@@ -94,6 +94,8 @@ public class PostOperation {
 		.statusCode(204);
 		
 		System.out.println("commit 1");
+		System.out.println("commit 2");
+		
 		
 	}
 }
