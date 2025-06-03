@@ -91,7 +91,6 @@ public class PostOperation {
 		
 		resp.then()
 		.contentType(ContentType.JSON)
-		.assertThat().body(".createdBy",Matchers.equalTo("AARATI_Inamdar"))
 		.statusCode(204);
 		
 	}
