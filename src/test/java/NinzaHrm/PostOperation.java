@@ -94,5 +94,7 @@ public class PostOperation {
 		.assertThat().body(".createdBy",Matchers.equalTo("AARATI_Inamdar"))
 		.statusCode(204);
 		
+		System.out.println("hello");
+		
 	}
 }
