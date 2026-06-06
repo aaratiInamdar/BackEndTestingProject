@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PracticeForCRUD.ShopperStack">
+      <class name="com.Authorization.Sample">
         <methods>
-          <include name="shopperstack"/>
+          <include name="simple"/>
         </methods>
-      </class> <!-- PracticeForCRUD.ShopperStack -->
+      </class> <!-- com.Authorization.Sample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

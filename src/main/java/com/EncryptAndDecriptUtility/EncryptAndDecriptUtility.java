@@ -1,6 +1,5 @@
 package com.EncryptAndDecriptUtility;
 
-
 //	String privateKey="Ac03tEam@j!tu_#1";
 
 import java.util.Base64;

@@ -64,10 +64,8 @@ public void setProjectName(String projectName) {
 }
 
  class ProjectManager {
-
 	   String name;
-	   String id;
-	   
+	   String id;   
 	    public ProjectManager(String name, String id) {
 		super();
 		this.name = name;
@@ -85,15 +83,12 @@ public void setProjectName(String projectName) {
 	    }
 	    public String getId() {
 	        return id;
-	    }
-	    
+	    }    
 	}
-
 
 public class Run1_PojoClass {
 
-	public static void main(String[] args) throws StreamWriteException, DatabindException, IOException {
-		
+	public static void main(String[] args) throws StreamWriteException, DatabindException, IOException {	
 		List<String> li=new ArrayList<String>();
 		li.add("Jhon");
 		li.add("Devid");
@@ -101,11 +96,8 @@ public class Run1_PojoClass {
 
 	ProjectManager pManager=new ProjectManager("Sagar", "tp01");
 		Project1 pObj=new Project1("NaviMumbai", "created", 10, li, pManager);
-		System.out.println("Start");
-		
+		System.out.println("Start");	
 		ObjectMapper obj=new ObjectMapper();
 		obj.writeValue(new File("./project.json"), pObj);
-
 	}
-
 }

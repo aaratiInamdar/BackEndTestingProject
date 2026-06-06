@@ -4,12 +4,9 @@ import org.testng.annotations.Test;
 import com.EncryptAndDecriptUtility.EncryptAndDecriptUtility;
 
 public class AESEnpTest {
-	
 //	Symmetric encryption 
-
 	@Test
 	public void sampleTest() throws Exception
-	
 	{
 		String privateKey="Ac03tEam@j!tu_#1";
 		String data="Aarati";

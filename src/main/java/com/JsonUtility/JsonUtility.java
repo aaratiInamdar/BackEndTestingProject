@@ -1,32 +1,24 @@
 package com.JsonUtility;
-
 import java.util.List;
 import com.jayway.jsonpath.JsonPath;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 
 public class JsonUtility {
-
-	
 //	 get the json data from based on json complex xpath
 	public String getDataOnJsonPath(Response response , String jsonXpath)
 	{
 		List<Object> list = JsonPath.read(response.asString(), jsonXpath);
-		return list.get(0).toString();
-		
-	}
+		return list.get(0).toString();	
+	}	
 	
-	
-//	 get the XML data from based on XML complex xpath
-	
+//	 get the XML data from based on XML complex xpath	
 	public String getDataOnXpathPath(Response response , String xmlXpath)
 	{
 		return response.xmlPath().get(xmlXpath);
 	}
 	
-	
 //	verify the data in jsonbody based jsonpath
-	
 	public boolean VerifyDataOnJsonPath(Response response , String jsonXpath, String expectedData)
 	{
 		List<String> list = JsonPath.read(response.asString(), jsonXpath);
@@ -39,14 +31,12 @@ public class JsonUtility {
 				flag=true;
 			}
 		}
-		if (flag ==false )
-			
+		if (flag ==false )			
 		{
 			System.out.println(expectedData + "is not available==FAIL");
 		}
 		return flag ;
 	}
-	
 	
 //	get the access token 
 	public String getAccessToken()
@@ -62,6 +52,5 @@ public class JsonUtility {
 //			Capture the data from the response 
 			String token = response.jsonPath().get("access_token");
 			return token;
-	}
-	
+	}	
 }

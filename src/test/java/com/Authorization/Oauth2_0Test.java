@@ -32,5 +32,4 @@ public class Oauth2_0Test {
 		.then()
 				.log().all();
 	}
-	
 }

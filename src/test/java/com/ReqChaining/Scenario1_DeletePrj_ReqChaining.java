@@ -7,13 +7,10 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 import java.util.Random;
 
-
 public class Scenario1_DeletePrj_ReqChaining {
-
 	@Test
 	public void postDataToServer()
-	{
-	
+	{	
 //		create object for pojo class 
 		Random random=new Random();
 		int randomNum = random.nextInt(100);
@@ -35,13 +32,11 @@ public class Scenario1_DeletePrj_ReqChaining {
 		String  prjName = response.jsonPath().get("projectName");
 		String prjId= response.jsonPath().get("projectId");
 		System.out.println(prjId);
-		
-		
+	
 //		API 2 ==> delete the project
-				given()
-				   		.delete("http://49.249.28.218:8091/project/"+prjId)
-				   		
-			.then()
-				 .log().all();
+				 given()
+				 .delete("http://49.249.28.218:8091/project/"+prjId)	   		
+				.then()		
+				.log().all();
 	}
 }

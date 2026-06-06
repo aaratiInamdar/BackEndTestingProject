@@ -92,15 +92,6 @@ public class PostOperation {
 		resp.then()
 		.contentType(ContentType.JSON)
 		.statusCode(204);
-		
-<<<<<<< HEAD
-		System.out.println("commit 1");
-		System.out.println("commit 2");
-		
-=======
-		System.out.println("hello");
-		System.out.println("hye");
->>>>>>> NinzaHrm
-		
+
 	}
 }

@@ -31,7 +31,5 @@ public class Scenario3_GetPayrollInfo {
 		     		.get("http://49.249.28.218:8091/admin/payrolls")
 		.then()
 					.log().all();
-	}
-	
-	
+	}	
 }

@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-03T11:14:55 IST" name="Default suite" finished-at="2025-06-03T11:14:57 IST" duration-ms="2519">
+  <suite started-at="2026-02-28T15:38:23 IST" name="Default suite" finished-at="2026-02-28T15:38:29 IST" duration-ms="5397">
     <groups>
     </groups>
-    <test started-at="2025-06-03T11:14:55 IST" name="Default test" finished-at="2025-06-03T11:14:57 IST" duration-ms="2519">
-      <class name="NinzaHrm.PostOperation">
-        <test-method signature="getOperation()[pri:0, instance:NinzaHrm.PostOperation@682b2fa]" started-at="2025-06-03T11:14:55 IST" name="getOperation" finished-at="2025-06-03T11:14:56 IST" duration-ms="1587" status="PASS">
+    <test started-at="2026-02-28T15:38:23 IST" name="Default test" finished-at="2026-02-28T15:38:29 IST" duration-ms="5397">
+      <class name="com.Authorization.Oauth2_0Test">
+        <test-method signature="sampleTest()[pri:0, instance:com.Authorization.Oauth2_0Test@2a65fe7c]" started-at="2026-02-28T15:38:23 IST" name="sampleTest" finished-at="2026-02-28T15:38:29 IST" duration-ms="5302" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getOperation -->
-        <test-method signature="performCreate()[pri:0, instance:NinzaHrm.PostOperation@682b2fa]" started-at="2025-06-03T11:14:56 IST" name="performCreate" finished-at="2025-06-03T11:14:57 IST" duration-ms="731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- performCreate -->
-        <test-method signature="performDelete()[pri:0, instance:NinzaHrm.PostOperation@682b2fa]" started-at="2025-06-03T11:14:57 IST" name="performDelete" finished-at="2025-06-03T11:14:57 IST" duration-ms="67" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- performDelete -->
-        <test-method signature="putOperation()[pri:0, instance:NinzaHrm.PostOperation@682b2fa]" started-at="2025-06-03T11:14:57 IST" name="putOperation" finished-at="2025-06-03T11:14:57 IST" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- putOperation -->
-      </class> <!-- NinzaHrm.PostOperation -->
+        </test-method> <!-- sampleTest -->
+      </class> <!-- com.Authorization.Oauth2_0Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
